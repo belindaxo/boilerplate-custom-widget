@@ -14,8 +14,7 @@
             "url": "https://belindaxo.github.io/boilerplate-custom-widget/dist/bundle.js",
             "integrity": "",
             "ignoreIntegrity": true
-        },
-        
+        }  
     ],
     "properties": {
         "width": {
