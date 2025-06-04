@@ -1,4 +1,4 @@
-## SAC Highchart Custom Widget Boilerplate 
+## SAC Highcharts Custom Widget Boilerplate 
 ### To get started:
 #### Creating a repository from this template:
 1. From the main page of the repository:  <kbd>Use this template</kbd> $\rightarrow$ <kbd>Create a new repository</kbd>
