@@ -1,4 +1,4 @@
-## SAC Highchart Custom Widget Boilerplate 
+## SAC Highcharts Custom Widget Boilerplate 
 ### To get started:
 #### Creating a repository from this template:
 1. From the main page of the repository:  <kbd>Use this template</kbd> $\rightarrow$ <kbd>Create a new repository</kbd>
@@ -78,6 +78,8 @@ npx webpack --mode production
 - Ensure that your GitHub Pages site is being built from the `main` branch and the root folder
 
 - Once this is done, replace the `url` property in the JSON file for each web component with your GitHub Pages site link, adding `/dist/bundle.js` to the end of the url to link directly to the resource file SAC will be using
+
+> For more information: [Creating your site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
 
 ---
 
