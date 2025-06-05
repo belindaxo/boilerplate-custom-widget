@@ -23,13 +23,12 @@ npm -v
 
 2. In your project directory, run the following commands:
 ```
-# 1. initialize npm
 npm init -y
-
-# 2. install development dependencies
+```
+```
 npm install --save-dev webpack webpack-cli babel-loader @babel/core @babel/preset-env
-
-# 3. install Highcharts dependency
+```
+```
 npm install highcharts
 ```
 
