@@ -23,13 +23,12 @@ npm -v
 
 2. In your project directory, run the following commands:
 ```
-# 1. initialize npm
 npm init -y
-
-# 2. install development dependencies
+```
+```
 npm install --save-dev webpack webpack-cli babel-loader @babel/core @babel/preset-env
-
-# 3. install Highcharts dependency
+```
+```
 npm install highcharts
 ```
 
@@ -80,6 +79,21 @@ npx webpack --mode production
 - Once this is done, replace the `url` property in the JSON file for each web component with your GitHub Pages site link, adding `/dist/bundle.js` to the end of the url to link directly to the resource file SAC will be using
 
 > For more information: [Creating your site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
+
+---
+
+### Subresource Integrity
+- When your custom widget development is complete, change `ignoreIntegrity` to `true` and use the following terminal command to generate an SRI hash:
+```
+openssl dgst -sha256 -binary dist/bundle.js | openssl base64 -A
+```
+- Copy the output of the command and paste it into the value for `integrity` and add `sha256-` to the front
+
+Example `integrity` string (base64-encoded sha256 hash):
+```
+sha256-vtBjAynXpvPToUwIgaHly+LRCltMRAXSac/htVQhw6o=
+```
+- Note that if `bundle.js` is modified at any point after enabling this, you will need to generate a new hash
 
 ---
 
