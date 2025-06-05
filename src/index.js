@@ -85,6 +85,18 @@ var parseMetadata = metadata => {
         }
 
         /**
+         * Specifies which attributes should trigger re-rendering on change.
+         * @returns {string[]} An array of observed attribute names.
+         */
+        static get observedAttributes() {
+            return [
+                // List property names defined in JSON and styling panel here
+                // Example:  'chartTitle', 'chartSubtitle', etc.
+
+            ]
+        }
+
+        /**
          * Called when an observed attribute changes.
          * @param {string} name - The name of the changed attribute.
          * @param {string} oldValue - The old value of the attribute.
