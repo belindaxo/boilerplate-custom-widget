@@ -83,7 +83,7 @@ npx webpack --mode production
 ---
 
 ### Subresource Integrity
-- When your custom widget development is complete, change `ignoreIntegrity` to `true` and use the following terminal command to generate an SRI hash:
+- When your custom widget development is complete, change `ignoreIntegrity` to `false` and use the following terminal command to generate an SRI hash:
 ```
 openssl dgst -sha256 -binary dist/bundle.js | openssl base64 -A
 ```
